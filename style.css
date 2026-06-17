@@ -1,4 +1,6 @@
 body {
+    position: relative;
+    width: 400px;
     padding: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -60,7 +62,7 @@ color: #22C55E;
 }
 
 #saveProgress {
-    margin-top: 50px;
+    margin-top: 10px;
     padding-right: 50%;
     display: inline-block;
     font-weight: bold;
@@ -68,6 +70,7 @@ color: #22C55E;
 }
 
 #download {
+    position: absolute;
     display: inline-block;
     border-radius: 40px;
     padding: 12px 15px;
@@ -77,6 +80,7 @@ color: #22C55E;
     color: white;
     border: none;
     cursor: pointer;
+    margin-right: auto;
 }
 
 #download:hover {
