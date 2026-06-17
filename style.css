@@ -1,0 +1,69 @@
+body {
+    padding: 20px;
+}
+
+.inline{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.firstLine{
+    font-size: 30px;
+}
+
+.topMod {
+    display: block;
+    margin-right: 20px;
+}
+
+.leftMod, .rightMod {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+#name, #date {
+    display: block;
+    border-radius: 40px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+#projectProgress, #blockers {
+    display: block;
+    border-radius: 10px;
+    padding: 12px 15px;
+    width: 500px;
+}
+
+#saveProgress {
+    margin-top: 50px;
+    padding-right: 50%;
+    display: inline-block;
+    font-weight: bold;
+    color: #000000;
+}
+
+#download {
+    display: inline-block;
+    border-radius: 40px;
+    padding: 12px 15px;
+    width: 200px;
+    font-weight: bold;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#download:hover {
+    display: inline-block;
+    border-radius: 40px;
+    padding: 12px 15px;
+    width: 200px;
+    font-weight: bold;
+    background-color: #d30606;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
