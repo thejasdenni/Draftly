@@ -19,7 +19,7 @@ body {
     position: absolute;
     width: 100%;
     outline: none;
-    font-size: 1.5em;
+    font-size: 1em;
     padding: 0px 30px;
     line-height: 40px;
     border-radius: 5px;
@@ -38,14 +38,18 @@ body {
 }
 
 .topInput:focus,
-.topInput:valid{
+.topInput:active{
     color: #22C55E;
     border: 2px solid #22C55E;
 }
 
 .topInput:focus + .labelLine,
+.topInput:active + .labelLine{
+color: #22C55E;
+}
+
+.topInput:focus + .labelLine,
 .topInput:valid + .labelLine{
-    color: #22C55E;
     background: white;
     height: 30px;
     line-height: 40px;
