@@ -1,24 +1,62 @@
 body {
     padding: 20px;
-}
-
-.inline{
-    display: inline-block;
-    margin-right: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .firstLine{
     font-size: 30px;
 }
 
-.topMod {
-    display: block;
-    margin-right: 20px;
+.container {
+    width: 300px;
 }
 
-.leftMod, .rightMod {
-    display: inline-block;
-    margin-right: 30px;
+.textArea {
+    position: relative;
+    height: 80px;
+    line-height: 40px;
+}
+
+.topInput{
+    position: absolute;
+    width: 100%;
+    outline: none;
+    font-size: 1.5em;
+    padding: 0px 30px;
+    line-height: 40px;
+    border-radius: 5px;
+    border: 2px solid;
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 1111;
+}
+
+.labelLine{
+    position: absolute;
+    font-size: 0.8em;
+    padding: 0px 25px;
+    background: white;
+    transition: 0.2s ease;
+}
+
+.topInput:focus,
+.topInput:valid{
+    color: #22C55E;
+    border: 2px solid #22C55E;
+}
+
+.topInput:focus + .labelLine,
+.topInput:valid + .labelLine{
+    color: #22C55E;
+    background: white;
+    height: 30px;
+    line-height: 40px;
+    transform: translate(-20px,-20px) scale(0.88);
+    margin-left: 10px;
+    padding: 0px 5px;
+    z-index: 1111;
 }
 
 #name, #date {
@@ -57,13 +95,5 @@ body {
 }
 
 #download:hover {
-    display: inline-block;
-    border-radius: 40px;
-    padding: 12px 15px;
-    width: 200px;
-    font-weight: bold;
     background-color: #d30606;
-    color: white;
-    border: none;
-    cursor: pointer;
 }
