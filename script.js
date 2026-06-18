@@ -14,9 +14,8 @@ week.addEventListener("change", function(){
     const options1 = { month: 'long', day: 'numeric'};
     const options2 = {day: 'numeric', year: 'numeric' };
     const dateRange = monday.toLocaleDateString('en-US',options1) + ' - ' + saturday.toLocaleDateString('en-US',options2);
-    console.log("Date is " + dateRange);
-        const paragraph = document.getElementById('weekRange');
-        paragraph.innerText = dateRange;
+    const paragraph = document.getElementById('weekRange');
+    paragraph.innerText = dateRange;
 }
 );
 
