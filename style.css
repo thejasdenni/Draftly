@@ -61,6 +61,13 @@ color: #22C55E;
     z-index: 1111;
 }
 
+#weekRange{
+    font-size: 0.8em;
+    color: #ff0000;
+    padding-top: 40px;
+    padding-left: 5px;
+}
+
 #saveProgress {
     margin-top: 10px;
     padding-right: 50%;
