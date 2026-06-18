@@ -1,5 +1,15 @@
 const week = document.getElementById("weekID");
+
 week.addEventListener("change", function(){
-    console.log(week.value)
+    const arr0 = week.value.split('-W');
+    const year = Number(arr0[0]);          
+    const weekNum = Number(arr0[1]);
+    const jan4 = new Date(year, 0, 4);
+    const dayOfWeek = jan4.getDay();
+    const mondayOffSet = (dayOfWeek === 0 ? 6 : dayOfWeek - 1);
+    const monday = new Date(jan4);
+    monday.setDate(jan4.getDate() - mondayOffSet + (weekNum - 1) * 7);
+    console.log(monday);
 }
 );
+
