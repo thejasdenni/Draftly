@@ -19,3 +19,12 @@ week.addEventListener("change", function(){
 }
 );
 
+let progressEntries = []
+let id = 0
+function addEntry(text){
+    id++; 
+    progressEntries.push({id: id, text: text})
+}
+addEntry("fixed Erros")
+addEntry("Create 3 Assets for Socials")
+console.log(progressEntries)
